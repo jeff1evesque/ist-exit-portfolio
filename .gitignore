@@ -1,6 +1,9 @@
 ##
 ## ignore files
 ##
+/**/*.swp
+/**/*.save
+/**/.DS_Store
+/**/.bash_history
 /**/resume*.doc
 /**/resume*.docx
-
