@@ -2,6 +2,14 @@
 
 This project focused on a fixed portfolio consisting of companies that have been recently hacked or breached.  In general, efforts in this project attempts to put into place a frame of analysis to determine the impact to stock values. However, follow-up studies could determine whether companies had or lacked business acumen to mitigate or minimize the effect of such occurrences.  Further analysis could also indicate whether to avoid volatile stocks that have been hacked or breached, and whether different sectors are more impacted.
 
+## Codebase
+
+The entire [project codebase](https://github.com/jeff1evesque/fin-654) can be downloaded:
+
+```bash
+git clone https://github.com/jeff1evesque/fin-654.git
+```
+
 ## Dependency
 
 This project requires local [R installation](https://cran.r-project.org/bin/).  However, all required [packages](https://github.com/jeff1evesque/fin-654/tree/master/packages) have been automated, using a combination of conditional [`install.packages`](https://github.com/jeff1evesque/fin-654/blob/master/app.R#L20-L37), as well as custom [utility functions](https://github.com/jeff1evesque/fin-654/blob/master/app.R#L38-L67). However, edge cases may exist.  For example, linux systems may require [additional configurations](https://github.com/jeff1evesque/fin-654/blob/master/app.R#L4-L17):

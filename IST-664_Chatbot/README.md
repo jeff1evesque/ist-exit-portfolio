@@ -4,6 +4,14 @@ This is final project for a short 10 week course in Natural Language Processing 
 
 The first classifier attempts to predict whether a given sentence is a question. The second predicts what StackOverflow channel best represents a given sentence. Therefore, the ensembled application executes the LSTM agent when a given sentence is predicted as a question. If the agent is incapable of returning an adequate response, then the second classifier proposes a stackoverflow channel.
 
+## Codebase
+
+The entire [project codebase](https://github.com/jeff1evesque/ist-664) can be downloaded:
+
+```bash
+git clone https://github.com/jeff1evesque/ist-664.git
+```
+
 ## Dependency
 
 Since this project is a proof of concept, the necessary build has been automated using a [`Vagrantfile`](https://github.com/jeff1evesque/ist-664/blob/master/Vagrantfile). This local development requires both [vagrant](https://www.vagrantup.com/) + [virtualbox](https://www.virtualbox.org/) to be installed. However, a supplied [`docker-compose.yml`](https://github.com/jeff1evesque/ist-664/blob/master/docker-compose.yml) could simulate a big data scenario, where ingested data is distributed across multiple mongodb nodes. For production systems, kubernetes would likely replace the `docker-compose` variant. Additionally, supplied [utility](https://github.com/jeff1evesque/ist-664/tree/master/utility) scripts can be used to install and configure [cuda](https://www.geforce.com/hardware/technology/cuda) and gpu-based [tensorflow](https://www.tensorflow.org/).
