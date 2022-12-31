@@ -36,13 +36,17 @@ Three different datasets are used to generate respective models
 
 ## Execution
 
-The [`run.py`](https://github.com/jeff1evesque/ist-664/blob/master/run.py) is an entrypoint script supporting the following features:
+Both classifiers have respective notebooks. The [StackOverflow](https://github.com/jeff1evesque/ist-664/tree/master/StackOverflow) segment contained both [classifier notebook](https://github.com/jeff1evesque/ist-664/blob/master/StackOverflow/StackOverflow_Classification.ipynb), which produces a (random forrest) [pickled model](https://github.com/jeff1evesque/ist-664/blob/master/StackOverflow/SO_RF_Model_new.pkl), as well as a [sklearn notebook](https://github.com/jeff1evesque/ist-664/blob/master/StackOverflow/StackOverflow_SKLearn.ipynb) for general exploratory data analysis (EDA). Similarly, the [CMU](https://github.com/jeff1evesque/ist-664/tree/master/QuestionAnswerCMU) segment also contained an EDA [notebook](https://github.com/jeff1evesque/ist-664/blob/master/QuestionAnswerCMU/QuestionAnswerCMU_Classification.ipynb), which also produced a [pickled model](https://github.com/jeff1evesque/ist-664/blob/master/QuestionAnswerCMU/model/random_forest.pkl).
+
+Finally, an LSTM model is trained using a provided [`run.py`](https://github.com/jeff1evesque/ist-664/blob/master/run.py) entrypoint script:
 
 - `--insert`: inserts relative `Reddit/data/` data into the specified mongodb endpoint
 - `--train`: trains an LSTM recurrent neural network for the "inserted" mongodb data
 - `--local`: implement the local trained LSTM model
 - `--drop`: drops all documents in the default mongodb collection used during `--insert`
 - `--generic`: implements a pretrained LSTM model based on 1M comment-reply pairs
+
+This [`run.py`](https://github.com/jeff1evesque/ist-664/blob/master/run.py) using `--generic` can be used to inference the ensembled chatbot using a series of utility scripts. Ultimately, the [question-answer](https://github.com/jeff1evesque/ist-664/blob/master/run.py#L128) classifier is used to determine whether the provided input sentence is a question.  If the sentence is classified as a question, the [LSTM inference](https://github.com/jeff1evesque/ist-664/blob/master/run.py#L132-L133) returns a response. Finally, if the inference does not return an acceptable response, the [channel suggestion](https://github.com/jeff1evesque/ist-664/blob/master/run.py#L142) classifier returns a fall-back response.
 
 ## Motivation
 
