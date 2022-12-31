@@ -40,7 +40,17 @@ Due to limitations of the twitter API, roughly 3200 tweets could be collected fo
 
 ## Execution
 
-A provided [`config-TEMPLATE.py`](https://github.com/jeff1evesque/ist-736/blob/master/config-TEMPLATE.py) is required to be copied as `config.py` in the same directory. If additional twitter user timelines, or quandl stock index would be studied, the contents of the copied `config.py` need to match, respectively. However, to run the codebase to reflect the choices made in this study, then no API keys need to be pasted into the configuration. Instead, additional configurations need to be properly commented out. Specifically, only one analysis can be performed at a given time. Moreover, timeseries sentiment models (consisting of both ARIMA and LSTM) has an added constraint. Specifically, only one stock code can be implemented at a given time:
+A provided [`config-TEMPLATE.py`](https://github.com/jeff1evesque/ist-736/blob/master/config-TEMPLATE.py) is required to be copied as `config.py` in the same directory. If additional twitter user timelines, or quandl stock index would be studied, the contents of the copied `config.py` need to match, respectively. Additional controls can be adjusted in the same `config.py`:
+
+- number of epochs
+- lstm cells
+- number of neurons (i.e. `lstm_units`)
+- signal analysis threshold (i.e. `classify_threshold`)
+- TF-IDF feature reduction for classification (i.e. `classify_chi2`)
+
+Further, the overall data collection is idempotent. Since [`TwitterQuery`](https://github.com/jeff1evesque/ist-736/blob/58e1169a0c3d96da724db496d3adeb4f241b7752/consumer/twitter.py#L36-L67) and [`QuandlQuery`](https://github.com/jeff1evesque/ist-736/blob/58e1169a0c3d96da724db496d3adeb4f241b7752/consumer/quandl.py#L27-L46) has already been executed for the overall project, corresponding twitter and quandl csv files have already been produced. This means running the codebase again, will not rewrite or delete existing datasets. In order to generate new files for the same ticker or analyst, they need to be moved, deleted, or renamed.
+
+Additionally, only one analysis can be performed at a given time, which involves commenting out segments of `app.py` prior to execution. Moreover, timeseries sentiment models (consisting of both ARIMA and LSTM) has an added constraint. Only one stock code can be implemented at a given time:
 
 ```python
 screen_name = [
@@ -67,15 +77,9 @@ codes = [
 ]
 ```
 
-The above limitation is largely due to an exponentiating memory utilization of a local machine. Should this codebase be extended as a [restful application](https://aws.amazon.com/what-is/restful-api/), the latter issue could resolve itself. Additional controls can be adjusted in the same `config.py`:
+The above limitation is largely due to memory requirements that are too much for a local machine. Should this codebase be extended as a [restful application](https://aws.amazon.com/what-is/restful-api/), the latter issue could resolve itself.
 
-- number of epochs
-- lstm cells
-- number of neurons (i.e. `lstm_units`)
-- signal analysis threshold (i.e. `classify_threshold`)
-- TF-IDF feature reduction for classification (i.e. `classify_chi2`)
-
-The overall analysis can be executed in a stepwise fashion, by (un)commenting respective `codes` from the above `config.py`:
+The overall analysis can be executed in a stepwise fashion, by (un)commenting respective `codes`, as well as adjusting the modified `config.py`:
 
 ```bash
 $ pwd
