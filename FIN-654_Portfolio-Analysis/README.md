@@ -32,7 +32,6 @@ The [security](https://github.com/jeff1evesque/fin-654/tree/master/data/security
 
 **Note:** the entire process of [download/loading](https://github.com/jeff1evesque/fin-654/blob/master/packages/fin654/R/load_symbol.R) datasets is completely automated.  If local [symbol](https://github.com/jeff1evesque/fin-654/tree/master/data/symbol) dataset already exists, it will be used. Otherwise, the dataset will be generated on-demand, and will require a valid [`Quandl.api_key`](https://github.com/jeff1evesque/fin-654/blob/master/packages/fin654/R/load_symbol.R#L29).
 
-
 ## Execution
 
 Executing the overall project can be done with a single command:
