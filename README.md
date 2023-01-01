@@ -10,7 +10,7 @@ xxxxxxxxx
 
 - `./resume.doc`: current resume
 - `./certification`: aws certifications obtained prior to graduation
-- `./portfolio.docx`: overall summary of learning achievement from select project(s)
+- `./portfolio.docx`: overall summary of learning achievement from select [project](https://github.com/jeff1evesque/ist-exit-portfolio#project)(s)
 - `./presentation.pptx`: overall presentation for select [project](https://github.com/jeff1evesque/ist-exit-portfolio#project)(s)
 
 ## Project
