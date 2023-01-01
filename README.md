@@ -1,7 +1,9 @@
 # Data Science Portfolio
 
 Jeff Levesque
+<br/>
 jlevesqu@syr.edu
+<br/>
 xxxxxxxxx
 
 ## Supplementary
