@@ -30,9 +30,9 @@ data_directory = 'data'
 
 Three different datasets are used to generate respective models
 
-- [StackOverflow](https://github.com/jeff1evesque/ist-664/tree/master/StackOverflow/data): original large json split into multiple files then pickled
-- [QuestionAnswerCMU](https://github.com/jeff1evesque/ist-664/tree/master/QuestionAnswerCMU/data)
-- [Reddit](https://github.com/jeff1evesque/ist-664/tree/master/Reddit/data)
+- [StackOverflow](https://github.com/jeff1evesque/ist-664/tree/master/StackOverflow/data): list of postings grouped by channels used to train classifier to label questions
+- [QuestionAnswerCMU](https://github.com/jeff1evesque/ist-664/tree/master/QuestionAnswerCMU/data): question-answer pair to train question classifier
+- [Reddit](https://github.com/jeff1evesque/ist-664/tree/master/Reddit/data): json data used to train RNN based NMT chat agent
 
 ## Execution
 
