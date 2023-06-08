@@ -5,9 +5,10 @@ This document contains chosen assignments and projects worked on during the cour
 **Student**
 Jeff Levesque
 <br/>
+77221-2615-0
+<br/>
 jlevesqu@syr.edu
 <br/>
-xxxxxxxxx
 
 **Overseeing Faculty**
 <br/>
