@@ -8,6 +8,10 @@ jlevesqu@syr.edu
 <br/>
 xxxxxxxxx
 
+**Overseeing Faculty**
+John Stinnett
+jpstinne@syr.edu
+
 ## Supplementary
 
 - `./resume.doc`: current resume
