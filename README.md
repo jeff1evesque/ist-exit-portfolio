@@ -9,7 +9,9 @@ jlevesqu@syr.edu
 xxxxxxxxx
 
 **Overseeing Faculty**
+<br/>
 John Stinnett
+<br/>
 jpstinne@syr.edu
 
 ## Supplementary
