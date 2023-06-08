@@ -2,17 +2,25 @@
 
 This document contains chosen assignments and projects worked on during the course of enrollment for the [MS of Data Science](https://ischool.syr.edu/academics/applied-data-science-masters-degree/). The below [Supplementary](https://github.com/jeff1evesque/ist-exit-portfolio#supplementary) section provides professional background, summary for selected projects, and a powerpoint presentation used for the general exit requirements for the MS program.  Lastly, the [Project](https://github.com/jeff1evesque/ist-exit-portfolio#project) section highlights chosen assignments/projects that best represent materials learned within the SU program.
 
+**Student**
 Jeff Levesque
+<br/>
+77221-2615-0
 <br/>
 jlevesqu@syr.edu
 <br/>
-xxxxxxxxx
+
+**Overseeing Faculty**
+<br/>
+John Stinnett
+<br/>
+jpstinne@syr.edu
 
 ## Supplementary
 
 - `./resume.doc`: current resume
 - `./certification`: aws certifications obtained prior to graduation
-- `./portfolio.docx`: overall summary of learning achievement from select [project](https://github.com/jeff1evesque/ist-exit-portfolio#project)(s)
+- `./jeff_levesque_written_paper_final_draft.docx`: overall summary of learning achievement from select [project](https://github.com/jeff1evesque/ist-exit-portfolio#project)(s)
 - `./presentation.pptx`: overall presentation for select [project](https://github.com/jeff1evesque/ist-exit-portfolio#project)(s)
 
 ## Project
