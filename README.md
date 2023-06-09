@@ -22,7 +22,7 @@ jpstinne@syr.edu
 - `./resume.doc`: current resume
 - `./certification`: aws certifications obtained prior to graduation
 - `./jeff_levesque_written_paper_final_draft.docx`: overall summary of learning achievement from select [project](https://github.com/jeff1evesque/ist-exit-portfolio#project)(s)
-- `./presentation.pptx`: overall presentation for select [project](https://github.com/jeff1evesque/ist-exit-portfolio#project)(s)
+- `./presentation.pptx`: overall presentation for select [project](https://github.com/jeff1evesque/ist-exit-portfolio#project)(s) ([see youtube](https://youtu.be/E_6_xfozGP8))
 
 ## Project
 
